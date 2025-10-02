@@ -91,7 +91,7 @@ export default function MapScreen() {
     <View style={styles.container}>
       <MapView style={styles.map} region={region} onRegionChangeComplete={(r) => setRegion(r)}>
         {/* member markers */}
-        {members.map((m) => (
+        {members.map((m: MemberLocation) => (
           <Marker
             key={m.userId}
             coordinate={{ latitude: m.lat, longitude: m.lng }}
