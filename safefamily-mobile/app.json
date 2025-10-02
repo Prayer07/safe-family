@@ -1,0 +1,53 @@
+{
+  "expo": {
+    "name": "safefamily-mobile",
+    "slug": "safefamily-mobile",
+    "scheme": "SafeFamily",
+    "version": "1.0.0",
+    "extra": {
+      "env": "development"
+    },
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "SafeFamily needs location to share with your family while using the app.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "SafeFamily uses location to share continuous updates with your family even when the app is in the background.",
+        "NSMotionUsageDescription": "Used to detect device shake for quick SOS triggers.",
+        "UIBackgroundModes": [
+          "location",
+          "fetch"
+        ]
+      }
+    },
+    "android": {
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION",
+        "WAKE_LOCK"
+      ]
+    },
+    "edgeToEdgeEnabled": true,
+    "predictiveBackGestureEnabled": false,
+    "plugins": [
+      "expo-router",
+      "expo-secure-store"
+    ]
+  },
+  "web": {
+    "favicon": "./assets/favicon.png"
+  }
+}
