@@ -5,7 +5,11 @@
     "scheme": "SafeFamily",
     "version": "1.0.0",
     "extra": {
-      "env": "development"
+      "env": "production",
+      "router": {},
+      "eas": {
+        "projectId": "f78f58c7-361e-4056-933a-53070590bc69"
+      }
     },
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -38,7 +42,8 @@
         "ACCESS_COARSE_LOCATION",
         "ACCESS_BACKGROUND_LOCATION",
         "WAKE_LOCK"
-      ]
+      ],
+      "package": "com.prayer07.safefamilymobile"
     },
     "edgeToEdgeEnabled": true,
     "predictiveBackGestureEnabled": false,

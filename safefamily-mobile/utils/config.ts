@@ -14,7 +14,7 @@ const CONFIG = {
     API_URL: "https://staging.yourapp.com/api",
   },
   production: {
-    API_URL: "https://yourapp.com/api",
+    API_URL: "https://safe-family.onrender.com/api",
   },
 };
 
