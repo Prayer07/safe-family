@@ -7,7 +7,7 @@
     "lib": ["ESNext"],
     "moduleResolution": "Node",
     "esModuleInterop": true,
-    "types": ["node", "express", "mongoose", "cors", "dotenv", "jsonwebtoken", "socket.io", "twilio"],
+    "types": ["node", "express", "mongoose", "cors", "jsonwebtoken", "socket.io"],
     "sourceMap": true,
     "strict": true,
     "skipLibCheck": true,
