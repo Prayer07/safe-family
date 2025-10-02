@@ -5,6 +5,7 @@ import { Family } from "../models/Family.js";
 import { User } from "../models/User.js";
 import mongoose from "mongoose";
 
+
 export const createFamily = async (req: Request, res: Response) => {
   try {
     const { name } = req.body as { name?: string };
@@ -39,7 +40,7 @@ export const joinFamily = async (req: Request, res: Response) => {
     const family = await Family.findOne({ inviteCode });
     if (!family) return res.status(404).json({ message: "Invalid invite code" });
 
-    if (family.members.find((m) => m.toString() === userId)) {
+    if (family.members.find((m: any) => m.toString() === userId)) {
       return res.status(400).json({ message: "Already a member" });
     }
 
